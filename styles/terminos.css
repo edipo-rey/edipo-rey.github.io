@@ -1,0 +1,121 @@
+.terminos > a{
+  font-weight: bold;
+}
+
+.toc {
+  position: fixed;
+  top: 150px;
+  left: 2%;
+  padding: 10px;
+  width: 30%;
+  line-height: 1.5;
+  font-size: 25px;
+}
+
+.toc.still {
+  position: relative;
+  margin-top: 50px;
+  top: 0;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.toc ul ul {
+  padding-left: 20px;
+}
+.toc li a {
+  display: inline-block;
+  color: #aaa;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.toc li.visible > a {
+  color: #111;
+  transform: translate(5px);
+}
+.toc-marker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.toc-marker path {
+  transition: all 0.3s ease;
+}
+
+.toc a:hover{
+    text-decoration: underline;
+}
+
+.content{
+  display: flex;
+}
+
+.contents{
+  text-align: justify;
+}
+
+.contents {
+    position: absolute;
+  left: 35%;
+  width: 55%;
+  font-size: 1.2em;
+  font-family: 'Frank Ruhl Libre', sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.contents img {
+  max-width: 100%;
+}
+.contents .code-block {
+  white-space: pre;
+  overflow: auto;
+  max-width: 100%;
+}
+.contents .code-block code {
+  display: block;
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+.contents .code-inline {
+  background-color: #f9f9f9;
+  padding: 4px;
+}
+.contents h2, .contents h3 {
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+@media(max-width: 1000px){
+    .toc {
+        font-size: 20px;
+      }
+}
+
+@media(min-width: 1400px){
+    .toc {
+        font-size: 30px;
+      }
+}
+@media(min-width: 1600px){
+    .toc {
+        width: 25%
+      }
+
+      .contents {
+        position: absolute;
+      left: 30%;
+      width: 60%;
+      font-size: 1.2em;
+      font-family: 'Frank Ruhl Libre', sans-serif;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 50px;
+    }
+}
