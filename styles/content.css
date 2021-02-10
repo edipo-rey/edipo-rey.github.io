@@ -1,6 +1,3 @@
-.terminos > a{
-  font-weight: bold;
-}
 
 .toc {
   position: fixed;
@@ -8,7 +5,7 @@
   left: 2%;
   padding: 10px;
   width: 30%;
-  line-height: 1.5;
+  line-height: 1.2;
   font-size: 25px;
 }
 
@@ -58,6 +55,7 @@
 
 .contents{
   text-align: justify;
+  word-wrap: break-word;
 }
 
 .contents {
@@ -87,8 +85,12 @@
   background-color: #f9f9f9;
   padding: 4px;
 }
-.contents h2, .contents h3 {
+.contents h2 {
   padding-top: 50px;
+  margin-bottom: 20px;
+}
+.contents h3{
+  padding-top: 20px;
   margin-bottom: 20px;
 }
 
